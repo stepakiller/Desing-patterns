@@ -151,11 +151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf5acf4455bb3943a1f49e3f53e63f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _classicData: {fileID: 11400000, guid: 1b76237b937710f42a7144bfb633e106, type: 2}
-  _caesarData: {fileID: 11400000, guid: fd195455ae0703247b327b90d16b7d6b, type: 2}
-  _meatData: {fileID: 11400000, guid: a9ba1d5411a339245b90d7b9d69bb2d0, type: 2}
-  _picklesData: {fileID: 11400000, guid: 026f99202dff7b045b5b3f5026764213, type: 2}
-  _onionData: {fileID: 11400000, guid: 83bf4a5cfcaef2344b7e8851e8ea7b28, type: 2}
+  _classic: {fileID: 11400000, guid: 1b76237b937710f42a7144bfb633e106, type: 2}
+  _caesar: {fileID: 11400000, guid: 8dd8c564e6cad614999097a52a2b0f52, type: 2}
+  _meat: {fileID: 11400000, guid: a9ba1d5411a339245b90d7b9d69bb2d0, type: 2}
+  _pickles: {fileID: 11400000, guid: 026f99202dff7b045b5b3f5026764213, type: 2}
+  _onion: {fileID: 11400000, guid: 83bf4a5cfcaef2344b7e8851e8ea7b28, type: 2}
 --- !u!4 &1303632065
 Transform:
   m_ObjectHideFlags: 0

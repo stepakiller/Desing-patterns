@@ -1,8 +1,9 @@
-public class IngredientDecorator : HotdogDecorator
+public class IngredientDecorator : Hotdog
 {
-    IngredientDataSO _data;
-    public IngredientDecorator(Hotdog hotdog, IngredientDataSO data) : base(hotdog.GetName(), hotdog) => _data = data;
-    public override string GetName() => _hotdog.GetName() + " " + _data.IngredientNameSuffix;
-    public override int GetCost() => _hotdog.GetCost() + _data.AddedCost;
-    public override int GetWeight() => _hotdog.GetWeight() + _data.AddedWeight;
+    private Hotdog _base;
+    public IngredientDecorator(Hotdog baseDog, HotdogItemSO info) : base(info) => _base = baseDog;
+
+    public override string GetName() => $"{_base.GetName()} {Data.Label}";
+    public override int GetCost() => _base.GetCost() + Data.Cost;
+    public override int GetWeight() => _base.GetWeight() + Data.Weight;
 }

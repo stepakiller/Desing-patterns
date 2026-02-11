@@ -1,8 +1,9 @@
 public abstract class Hotdog
 {
-    protected string _name;
-    public Hotdog(string name) => _name = name;
-    public virtual string GetName() => _name;
-    public abstract int GetCost();
-    public abstract int GetWeight();
+    protected HotdogItemSO Data;
+    public Hotdog(HotdogItemSO data) => Data = data;
+
+    public virtual string GetName() => Data.Label;
+    public virtual int GetCost() => Data.Cost;
+    public virtual int GetWeight() => Data.Weight;
 }
