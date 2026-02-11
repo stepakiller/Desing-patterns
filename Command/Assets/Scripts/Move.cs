@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class Move : ICommand
 {
     Transform _playerTransform;
